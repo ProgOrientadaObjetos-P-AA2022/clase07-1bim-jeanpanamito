@@ -23,8 +23,12 @@ public class ManejoArrayList {
         profesores[1] = prof2;
         
         for (int i = 0; i < profesores.length; i++) {
-            System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
-                    profesores[i].obtenerTipo());
+           // System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
+             //       profesores[i].obtenerTipo());
+       
+             Profesor p = profesores[i];
+             System.out.printf("%s - %s\n", profesores[i].obtenerNombre(),
+                 profesores[i].obtenerTipo());
         }
         
         System.out.println("-----------------------------");
@@ -35,6 +39,7 @@ public class ManejoArrayList {
         profesores2.add(prof2);
         
         for (int i = 0; i < profesores2.size(); i++) {
+            Profesor p = profesores2.get(i);
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
         }
@@ -45,6 +50,8 @@ public class ManejoArrayList {
         profesores2.add(prof3);
         
         for (int i = 0; i < profesores2.size(); i++) {
+            
+            
             System.out.printf("%s - %s\n", profesores2.get(i).obtenerNombre(),
                     profesores2.get(i).obtenerTipo());
         }

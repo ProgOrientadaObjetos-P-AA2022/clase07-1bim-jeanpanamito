@@ -42,5 +42,6 @@ public class Ejecutor {
         // System.out.println(lectura.toString());
         System.out.println(lectura);
         lectura.cerrarArchivo();
+        
     }
 }
